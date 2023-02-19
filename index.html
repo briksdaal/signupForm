@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
     <title>Sign-up Form</title>
-</head>
-<body>
-    <h1>Check</h1>
-</body>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-container">
+        <div class="logo-container"><h1>Bento</h1></div>
+        <div class="credit">Photo by <a href="https://unsplash.com/@weista" target="_blank">Vista Wei</a> on <a href="https://unsplash.com/" target="_blank">Unsplash</a></div>
+      </div>
+      <div class="right-container">
+        <div class="top-section">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-section">
+          <form action="" method="POST">
+            <div class="inner-form">
+              <p>Let's do this!</p>
+              <label for="firstname">First name</label>
+              <input type="text" name="firstname"/>
+              <label for="lastname">Last name</label>
+              <input type="text" name="lastname"/>
+              <label for="email">Email</label>
+              <input type="email" name="email"/>
+              <label for="phone">Phone number</label>
+              <input type="tel" name="phone"/>
+              <label for="pwd">Password</label>
+              <input type="password" name="pwd"/>
+              <label for="pwdconf">Confirm password</label>
+              <input type="password" name="pwdconf"/>
+            </div>
+            <button type="submit">Create account</button>
+          </form>
+        </div>
+        <div class="bot-section">
+          Already have an account? <span class="login">Log in</span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

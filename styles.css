@@ -7,8 +7,25 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
 h1 {
     font: 1em "bento", sans-serif;
-    color: red;
-    background-color: blue;
+    color: #fff;
+}
+
+.main-container {
+    background: #f9fafb;
+    flex: 1;
+    max-width: 1378px;
+    height: 100vh;
+    margin: 0 auto;
 }
