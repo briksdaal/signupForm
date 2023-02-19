@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'bento';
+    src: url('fonts/bento-2oxaw-webfont.woff2') format('woff2'),
+         url('fonts/bento-2oxaw-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 h1 {
+    font: 1em "bento", sans-serif;
     color: red;
     background-color: blue;
 }
