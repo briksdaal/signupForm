@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 @font-face {
   font-family: "bento";
   src: url("fonts/bento-2oxaw-webfont.woff2") format("woff2"),
@@ -6,12 +8,14 @@
   font-style: normal;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+    font-size: 22px;
 }
 
 body {
@@ -19,8 +23,7 @@ body {
   justify-content: center;
   background-color: #000;
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-container {
@@ -40,8 +43,10 @@ body {
 }
 
 .right-container {
+    display: flex;
   width: 65%;
-  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* .left-container::before {
@@ -76,7 +81,7 @@ body {
 }
 
 .logo-container h1 {
-  font: 2.3em "bento", sans-serif;
+  font: 2.5rem "bento", sans-serif;
   color: #fff;
 }
 
@@ -84,7 +89,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size: 0.6em;
+    font-size: 0.6rem;
     margin-bottom: 10px;
     color: #fff;
     text-align: center;
@@ -92,4 +97,57 @@ body {
 
 .credit a, .credit a:visited, .credit a:active , .credit a:hover {
     color: #fff;
+}
+
+.right-container .top-section, .right-container .bot-section {
+    margin-left: 50px;
+}
+
+.right-container .top-section p, .right-container .form-section p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.right-container .top-section {
+    width: 700px;
+}
+
+.top-section {
+    margin-bottom: 30px;
+}
+
+.top-section p + p {
+    margin-bottom: 30px;
+}
+
+.inner-form {
+    background-color: #fff;
+    padding: 20px 50px;
+    box-shadow: #c1c1c1 0 4px 4px 0px;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+    background-color: #9ec6ea;
+    padding: 10px 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    box-shadow: #b5b5b5 2px 2px 4px 0;
+}
+
+.bot-section {
+    font-size: 0.8rem;
+}
+
+.bot-section .login {
+    color: #6ba8dd;
 }
