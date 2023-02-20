@@ -174,8 +174,17 @@ form input:focus, form input:focus-visible {
     box-shadow: #d9d9d9 2px 2px 4px 0;
 }
 
+form input:invalid, form input.invalid{
+    border: 1px solid #ff1f1f;
+}
+
 form .input-container {
     margin-right: 70px;
+}
+
+form .pwd-error {
+    color: #ff1f1f;
+    font-size: 0.6rem;
 }
 
 button {
