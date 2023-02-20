@@ -1,31 +1,95 @@
 @font-face {
-    font-family: 'bento';
-    src: url('fonts/bento-2oxaw-webfont.woff2') format('woff2'),
-         url('fonts/bento-2oxaw-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "bento";
+  src: url("fonts/bento-2oxaw-webfont.woff2") format("woff2"),
+    url("fonts/bento-2oxaw-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-}
-
-h1 {
-    font: 1em "bento", sans-serif;
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
 }
 
 .main-container {
-    background: #f9fafb;
-    flex: 1;
-    max-width: 1378px;
-    height: 100vh;
-    margin: 0 auto;
+  display: flex;
+  background: #f9fafb;
+  flex: 1;
+  max-width: 1378px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.left-container {
+  position: relative;
+  width: 35%;
+  background: #fff url(bg-image.jpg) no-repeat;
+  background-size: cover;
+}
+
+.right-container {
+  width: 65%;
+  padding: 40px;
+}
+
+/* .left-container::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #00000044;
+} */
+
+.logo-container {
+  position: relative;
+  top: 200px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000080;
+  z-index: 10;
+}
+
+.logo-container .logo-svg {
+    margin-right: 20px;
+}
+
+.logo-container .logo-svg svg {
+  display: block;
+  fill: #fff;
+  width: 90px;
+  height: 90px;
+}
+
+.logo-container h1 {
+  font: 2.3em "bento", sans-serif;
+  color: #fff;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.6em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.credit a, .credit a:visited, .credit a:active , .credit a:hover {
+    color: #fff;
 }
