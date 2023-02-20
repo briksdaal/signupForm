@@ -5,8 +5,6 @@ pwdError = document.querySelector(".pwd-error")
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(`pwd: "${pwd.value}"`);
-    console.log(`pwdconf: "${pwdconf.value}"`);
     if (pwd.value !== pwdconf.value) {
         e.preventDefault();
         pwdError.textContent = `* Passwords do not match`;
